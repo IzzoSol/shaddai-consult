@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The MCP · SHADDAI CONSULT</title>
+<meta name="description" content="Everything the SHADDAI MCP does for Claude: five tools, seven agents, and grounded answers with sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/">SHADDAI <span>CONSULT</span></a>
+    <nav><a href="/use-cases.html">Use cases</a><a href="/pricing.html">Pricing</a><a href="/signup.html">Sign up</a></nav>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow">The MCP · shaddai-mcp v2.3.0</p>
+    <h1>What it does for Claude.</h1>
+    <p class="lede">A Model Context Protocol server that gives Claude seven specialist agents and their knowledge bases. It runs on your machine, needs no API key, and sends nothing to us.</p>
+    <code class="cmd"><span style="color:var(--accent)">$</span> claude mcp add shaddai -- npx -y shaddai-mcp</code>
+  </div>
+
+  <section>
+    <h2>The five tools</h2>
+    <div class="grid">
+      <div class="card"><span class="badge">list_agents</span><h3>See the council</h3><p>Lists the seven agents, their role and goal, and how many knowledge-base documents each one holds.</p></div>
+      <div class="card"><span class="badge">list_rag_docs</span><h3>Browse an agent's library</h3><p>Shows the documents inside one agent's knowledge base, so you know what it can cite.</p></div>
+      <div class="card"><span class="badge">rag_search</span><h3>Search the library</h3><p>Returns the ranked passages and source document for a query. Good for checking what the library says before you ask.</p></div>
+      <div class="card"><span class="badge">rag_ask</span><h3>Ask a grounded question</h3><p>Pulls the most relevant passages for one agent and tells Claude to answer from them, with sources.</p></div>
+      <div class="card"><span class="badge">run_agent</span><h3>Hand off a task</h3><p>Routes a goal to the right agent (or the one you name), loads its knowledge as passages, and returns a persona and instruction for Claude to finish the work.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The seven agents</h2>
+    <div class="grid">
+      <div class="card"><span class="badge">SHADDAI</span><h3>Strategy</h3><p>Orchestration, launch planning and decisions. The default agent.</p></div>
+      <div class="card"><span class="badge">NEXUS</span><h3>Architecture</h3><p>Scalable system design and engineering tradeoffs.</p></div>
+      <div class="card"><span class="badge">ZEROX</span><h3>Markets</h3><p>Money, pricing and unit economics.</p></div>
+      <div class="card"><span class="badge">ORACLE</span><h3>Research</h3><p>Research and grounded explanation.</p></div>
+      <div class="card"><span class="badge">TURTLE</span><h3>Creative</h3><p>Art, design and the creative process.</p></div>
+      <div class="card"><span class="badge">QUILL</span><h3>Writing</h3><p>Essays, copy and writing craft.</p></div>
+      <div class="card"><span class="badge">PIKADON</span><h3>Security</h3><p>Privacy, online security and hardening.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What it is, and what it isn't</h2>
+    <ul class="check">
+      <li>The MCP retrieves and frames knowledge. Claude, running on the customer's own account, writes the answer.</li>
+      <li>Current knowledge bases hold 21 source files in total. We say so rather than inflate the number.</li>
+      <li>It is a local package. It has no hosted service yet, so it does not meter usage. Paid usage needs the hosted gateway, which is planned, not live.</li>
+    </ul>
+    <p class="hint" style="margin-top:12px">Source: <a href="https://github.com/IzzoSol/shaddai-mcp">github.com/IzzoSol/shaddai-mcp</a></p>
+  </section>
+</div>
+<footer><div class="wrap">SHADDAI CONSULT · <a href="/pricing.html">Pricing</a> · <a href="/signup.html">Sign up</a></div></footer>
+</body>
+</html>

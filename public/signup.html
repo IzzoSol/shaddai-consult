@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up · SHADDAI CONSULT</title>
+<meta name="description" content="Sign up for SHADDAI CONSULT to get updates, early access and a scoped plan for your team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/">SHADDAI <span>CONSULT</span></a>
+    <nav><a href="/">Home</a><a href="/#contact">Contact</a></nav>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow">Sign up</p>
+    <h1>Get on the list.</h1>
+    <p class="lede">Tell us who you are and what you want to automate. We'll send your starting checklist and reach out to book a discovery call.</p>
+    <form id="signup-form" novalidate>
+      <label>Email<input class="field" name="email" type="email" autocomplete="email" required maxlength="200"></label>
+      <label>Name <span style="text-transform:none;letter-spacing:0">(optional)</span><input class="field" name="name" autocomplete="name" maxlength="120"></label>
+      <label>I'm interested in
+        <select class="field" name="interest">
+          <option value="">Choose one</option>
+          <option value="strategy">AI strategy and roadmap</option>
+          <option value="build">Custom agent build</option>
+          <option value="mcp">The SHADDAI MCP for Claude</option>
+          <option value="operate">Ongoing operation</option>
+        </select>
+      </label>
+      <div><button class="btn" type="submit">Sign up</button></div>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+<footer><div class="wrap">SHADDAI CONSULT</div></footer>
+<script src="/app.js" defer></script>
+</body>
+</html>
